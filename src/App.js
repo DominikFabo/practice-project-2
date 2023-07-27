@@ -58,11 +58,11 @@ function App() {
     SetErrorModal(<div />);
   }
   return (
-    <div>
+    <>
       <Input dataPassingHandler={inputDataHandler}></Input>
       {errorModal}
       <Output items={input} deleteHandler={deleteItemHandler}></Output>
-    </div>
+    </>
   );
 }
 
